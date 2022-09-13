@@ -1,29 +1,24 @@
 package br.com.bank.model;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Client implements Serializable {
+public class Client {
 
 	private String name;
 	private String cpf;
-	private String profession;
 	private String contactNumber;
-	private String email;
-	private Adress adress;
+	private String email;	
 	private LocalDate date;
+	private Adress adress;
 
 	
-	public Client(String name, String cpf, String profession, String contactNumber, String email, Adress adress,
-			LocalDate date) {
-		super();
+	public Client(String name, String cpf, String contactNumber, String email, Adress adress, LocalDate date) {
 		this.name = name;
 		this.cpf = cpf;
-		this.profession = profession;
 		this.contactNumber = contactNumber;
-		this.email = email;
-		this.adress = adress;
+		this.email = email;		
 		this.date = date;
+		this.adress = adress;
 	}
 
 	public String getNome() {
@@ -44,14 +39,6 @@ public class Client implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getProfession() {
-		return profession;
-	}
-
-	public void setProfession(String profession) {
-		this.profession = profession;
 	}
 
 	public String getContactNumber() {
@@ -89,16 +76,5 @@ public class Client implements Serializable {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
-	public String getProfissao() {
-		return profession;
-	}
-
-	public void setProfissao(String profissao) {
-		this.profession = profissao;
-	}
-	
-	
-	
 
 }

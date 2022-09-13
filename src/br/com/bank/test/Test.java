@@ -1,9 +1,5 @@
 package br.com.bank.test;
 
-import java.time.LocalDate;
-
-import br.com.bank.model.Client;
-
 public class Test {
 
 	public static void main(String[] args) {
